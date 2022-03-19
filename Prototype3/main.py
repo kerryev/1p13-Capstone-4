@@ -6,7 +6,7 @@
 # REFINED CODE 3
 
 from time import sleep
-from alert import start, cursor_selection
+from text import start, cursor_selection
 import serial
 
 ser = serial.Serial('/dev/2022')
