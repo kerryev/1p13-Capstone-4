@@ -1,0 +1,32 @@
+const int pinButton1 = 7;
+const int pinButton2 = 6;
+const int pinButton3 = 5;
+const int pinButton4 = 4;
+const int pinButton5 = 3;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+
+  int stateButton1 = digitalRead(pinButton1);
+  int stateButton2 = digitalRead(pinButton2);
+  int stateButton3 = digitalRead(pinButton3);
+  int stateButton4 = digitalRead(pinButton4);
+  int stateButton5 = digitalRead(pinButton5);
+
+  if (stateButton1 == 1) {
+    Serial.println("BUTTON 1 WAS PRESSED");
+  } else if (stateButton2 == 1) {
+    Serial.println("BUTTON 2 WAS PRESSED");
+  } else if (stateButton3 == 1){
+    Serial.println("BUTTON 3 WAS PRESSED");
+  } else if (stateButton4 == 1) {
+    Serial.println("BUTTON 4 WAS PRESSED");
+  } else if (stateButton5 == 1) {
+    Serial.println("BUTTON 5 WAS PRESSED");
+  }
+  delay(100);
+
+}
